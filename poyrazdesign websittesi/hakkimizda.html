@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poyraz Design | Hakkımızda</title>
+    <style>
+        /* GENEL AYARLAR */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 15px 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff; /* Logo rengi BEYAZ */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none; /* Alt çizgi yok */
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #616a73;
+        }
+
+        /* İÇERİK BÖLÜMÜ (Vizyon & Misyon) */
+        .content-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 50px;
+        }
+
+        /* Görsel Alanı */
+        .image-box {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+            object-fit: cover;
+        }
+
+        /* Yazı Alanı */
+        .text-box {
+            flex: 1;
+        }
+
+        .text-box h2 {
+            font-size: 32px;
+            color: #616a73;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .text-box p {
+            font-size: 17px;
+            color: #cccccc;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #1a1a1a;
+            color: #888;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+            margin-top: auto;
+        }
+
+        footer p {
+            margin: 8px 0;
+            font-size: 14px;
+        }
+
+        /* 📱 MOBİL UYUMLULUK (Responsive) */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .logo {
+                margin-bottom: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                width: 100%;
+                margin-top: 0;
+            }
+            
+            nav ul li {
+                margin: 0;
+            }
+
+            /* Mobilde menü linklerini buton gibi yapalım */
+            nav ul li a {
+                display: inline-block;
+                padding: 8px 16px;
+                background-color: rgba(255,255,255,0.05);
+                border-radius: 20px;
+                font-size: 14px;
+            }
+
+            .content-section {
+                flex-direction: column;
+                padding: 40px 20px;
+                gap: 30px;
+            }
+
+            .text-box {
+                text-align: center;
+            }
+
+            .text-box h2 {
+                font-size: 26px;
+            }
+            
+            .text-box p {
+                text-align: left; /* Okunabilirlik için sola yaslı */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/ChatGPT Image 12 Ara 2025 19_47_31.png" alt="Poyraz Design Logo">
+            Poyraz Design
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        
+        <div class="image-box">
+            <img src="images/IMG_3368_Original.jpg" alt="Poyraz Design Mutfak Tasarımı">
+        </div>
+
+        <div class="text-box">
+            <h2>Vizyonumuz</h2>
+            <p>
+                Poyraz Design, şehirlerin ve yaşam alanlarının geleceğini daha estetik, daha işlevsel ve daha sürdürülebilir çözümlerle şekillendirmeyi hedefler. Amacımız, her mekâna özgün bir karakter kazandıran, kalite ve tasarımı aynı çizgide buluşturan yenilikçi projelere imza atmak. Yarının ihtiyaçlarını bugünden hisseden, sektörde güven veren ve ilham oluşturan bir marka olmak istiyoruz.
+            </p>
+
+            <h2>Misyonumuz</h2>
+            <p>
+                Her projede kullanıcı beklentilerini doğru analiz eden, tasarım ve uygulama süreçlerinde yüksek standartları prensip edinen bir yaklaşım benimsiyoruz. Poyraz Design olarak, sağlam yapı tekniklerini modern dokunuşlarla buluşturarak estetik, dayanıklı ve uzun ömürlü yaşam alanları üretmeyi görev ediniyoruz. Çözüm odaklı iletişim, şeffaf süreç yönetimi ve titiz işçilikle, müşterilerimizin hayallerini gerçeğe dönüştürmek için çalışıyoruz.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>📍 Adres: Balıkesir / Bandırma</p>
+        <p>📞 Telefon: +90 541 565 78 61</p>
+        <p style="margin-top: 15px; opacity: 0.6;">&copy; 2023 Poyraz Design. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poyraz Design | İletişim</title>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background-color: #000;
+        color: #fff;
+        line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background-color: #1a1a1a;
+        border-bottom: 1px solid #333;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    .logo img {
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 25px;
+    }
+
+    nav ul li a {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: #616a73;
+    }
+
+    /* HERO */
+    .hero {
+        position: relative;
+        height: 300px;
+        background: url("images/deVOL-Petersham-Kitchen.webp") center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .hero h1 {
+        position: relative;
+        z-index: 1;
+        font-size: 38px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+        text-align: center;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    }
+
+    /* MAIN CONTENT */
+    .contact-section {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-column {
+        width: 100%;
+        background-color: #111;
+        padding: 40px;
+        border-radius: 15px;
+        border: 1px solid #333;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+    }
+
+    .info-box {
+        margin-bottom: 40px;
+    }
+
+    .info-box h3 {
+        color: #616a73;
+        margin-bottom: 20px;
+        font-size: 22px;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+
+    .info-box p {
+        font-size: 18px;
+        color: #ccc;
+        margin: 10px 0;
+    }
+    
+    .info-box strong {
+        color: #fff;
+    }
+
+    /* BUTTONS */
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* Butonlar arası boşluk */
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    /* Ortak Buton Ayarları */
+    .call-btn, .wp-btn, .ig-btn {
+        padding: 15px 25px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: transform 0.2s, filter 0.2s;
+        min-width: 150px; /* Genişlik standardı */
+        font-size: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    /* Buton Renkleri */
+    .call-btn { background: #007BFF; } /* Mavi */
+    .wp-btn { background: #25D366; }   /* Yeşil */
+    
+    /* Instagram Renk Geçişi */
+    .ig-btn { 
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    }
+
+    /* Hover Efekti */
+    .call-btn:hover, .wp-btn:hover, .ig-btn:hover {
+        transform: translateY(-3px);
+        filter: brightness(1.1);
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #1a1a1a;
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 14px;
+        border-top: 1px solid #333;
+        margin-top: 50px;
+    }
+    
+    footer p { margin: 8px 0; color: #888; }
+
+    /* 📱 MOBİL UYUMLULUK */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .logo { margin-bottom: 15px; }
+
+        nav ul {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+        }
+        
+        nav ul li { margin: 0; }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .hero h1 { font-size: 28px; }
+        .info-column { padding: 25px; }
+        
+        /* Mobilde butonlar alt alta daha rahat dursun */
+        .buttons { flex-direction: column; }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="images/ChatGPT Image 12 Ara 2025 19_47_31.png" alt="Logo">
+        Poyraz Design
+    </a>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Bizimle İletişime Geçin</h1>
+</section>
+
+<section class="contact-section">
+    
+    <div class="info-column">
+        
+        <div class="info-box">
+            <h3>📍 Adres & İletişim</h3>
+            <p>
+                <strong>Adres:</strong><br>
+                17 Eylül, Sanayi Sk. No:10/A<br>
+                Bandırma / Balıkesir
+            </p>
+            <p style="margin-top: 20px;">
+                <strong>E-posta:</strong><br>
+                batuhanpoyraz116@gmail.com
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>🕒 Çalışma Saatlerimiz</h3>
+            <p>
+                <strong>Pazartesi - Cuma:</strong> 09:00 - 18:00<br>
+                <strong>Cumartesi:</strong> 10:00 - 16:00<br>
+                <strong>Pazar:</strong> Kapalı
+            </p>
+        </div>
+
+        <div class="buttons">
+            <a class="call-btn" href="tel:+905415657861">📞 Hemen Ara</a>
+            <a class="wp-btn" href="https://wa.me/905415657861" target="_blank">💬 WhatsApp</a>
+            <a class="ig-btn" href="https://www.instagram.com/poyrazdiizayn/?igsh=emg0eTY1NWE3aWts&utm_source=qr" target="_blank">📷 Instagram</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>📍 Adres: Balıkesir / Bandırma</p>
+    <p>📞 Telefon: +90 541 565 78 61</p>
+    <p style="margin-top: 15px; opacity: 0.6;">© 2023 Poyraz Design. Tüm Hakları Saklıdır.</p>
+</footer>
+
+</body>
+</html>
